@@ -1,0 +1,27 @@
+Java
+  - Object oriented
+      - Polymorphism
+       - One name, many form
+      - Encapsulation
+        - Wrapping of data
+      - Abstraction
+        - Hiding properties /methods
+      - Inheritance
+  - Platform independant Lang
+  - Interpreted lang
+  - Open source and not free
+  - Not 100% OO
+  - portable
+
+  ---------------------------------------------------------------
+      .java
+
+  JDK  - Java Development Kit
+            javac FirtProgram.java
+    JRE - Java Runtime Environment
+            java FirtProgram
+
+    JVM  - Java Virtual Machine
+       - Interpreter
+          - Class file interpretation
+          JIT - Just In time Compiler

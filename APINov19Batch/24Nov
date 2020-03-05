@@ -1,0 +1,56 @@
+Revision
+ JDK - Java Development Kit
+    - Kit for development of java programs
+       - javac - java compiler
+         - converts java code to byte code
+         - checks the syntax and semantics of a language
+         - javac test.java
+         - test.class - Byte code
+      JRE - Java Runtime Environment
+          - It is an Environment provided to interprete/execute byte code.
+        JVM - Java Virtual Machine
+            - It is an interpreter which interprets the byte code.
+            JIT - Just in time compiler
+                - Optimizer
+            - java Test
+
+32 bit
+
+ 2 ^ 32 bit = 4GB
+64 bit
+
+2 ^ 64 bit = ~ TB
+
+-----------------------------------------------------------
+Data Types
+  -<datatype> <variableName> = value ;
+
+    - int  - Whole number
+      int a = 10;
+
+    - char - Single character
+       char value = 'A';
+       char value = 65;
+    - float - decimal
+       float a = 2.3f;
+    - double - decimal
+       double d = 2.3;
+    - byte - Whole Numbers - Small range
+      byte a = 120;
+    - boolean - T or f
+      boolean a = true;
+
+    - long - Whole Numbers - Large range
+      long val = 123344566661223L;
+    - short - Whole Numbers - mid range
+      short value = 12344;
+--------------------------------------------------------------
+Assignment 1
+
+Calculator
+
+   - Addition
+   - Substraction
+   - Multiplication
+   - Division
+   - Modulo

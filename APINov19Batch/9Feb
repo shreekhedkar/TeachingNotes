@@ -1,0 +1,48 @@
+https://api.octoperf.com/app/#/access/signup
+https://octoperf.com/blog/2018/04/23/jmeter-rest-api-testing/
+https://octoperf.com/blog/2017/03/09/how-to-extract-data-from-json-response-using-jmeter/#example-json-paths
+
+https://octoperf.com/blog/2018/04/04/jmeter-plugins-install/
+
+plugins
+   - Custom thread groups
+   - Json depricated plugins
+   - Perfmon
+https://octoperf.com/blog/2018/04/04/jmeter-plugins-install/
+
+  Perfmon Help -https://github.com/undera/perfmon-agent/blob/master/README.md
+
+
+----------------------------------------------------------------
+Revision
+   Postman  - Rest client tool
+
+Features :
+  -6. Environment - Local variables as well as test environment specific variables, global variables
+  -5. Logs - Postman console
+  -4. Import - from file, folder,raw data or url
+  -3. Export - as file
+  -2. Sharing - Sharing via url, folder, file, content of the file
+  -1. History
+   0. API automation - Request -> Send
+   1. Dynamic input - through environment variables - pre-request script
+       use this -> {{}} to substitute variables in your request or in urls
+   2. Validation - Tests - Output -> Test Results
+   3. Running a collection
+        - Use runner -> Select collection-> Select iterations -> run
+   4. Remote Execution of a collection
+--------
+  https://nodejs.org/en/download/package-manager/
+  npm install -g newman
+  npm install -g newman-reporter-html
+
+Command
+newman run https://www.getpostman.com/collections/88b8e7da0c56bcc5447d
+newman run "C:\Users\admin\Downloads\APITools\PostmanDataFiles\DummyApi.postman_collection.json" -e "C:\Users\admin\Downloads\APITools\PostmanDataFiles\Test- Dev Env.postman_environment.json" -r junit
+
+Assign:
+  Automate Jira APIs using postman and run it through postman
+     - Input data can come from Csv or Json file
+     - Use newman to run
+     - Parametrize wherever possible
+     - Use Assertions

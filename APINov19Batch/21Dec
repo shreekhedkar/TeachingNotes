@@ -1,0 +1,129 @@
+Revision
+  Interface - Bridge between unrelated entities
+            - has-a relationship
+            - provides abstraction by hiding implementation details
+            - provides way to achieve benefits of multiple inheritane.
+            - methods are by default public and abstract.
+            - Can't instiantiate interface.
+            - methods are declared in interface and implementation
+               is provided in classes which implements the interface.
+            - interface can have static method defined.It is called as default methods
+            - it is a contract between entities
+            - interface can extend an interface but can't implement an interface.
+
+temp.java
+public interface temp extends test{
+
+  public void sub();
+}
+
+class A implements temp {
+
+
+}
+
+test.java
+public interface test {
+
+    void add();
+}
+
+public class AnyClass implements test {
+
+    public void add(){
+
+            ---
+    }
+}
+
+Abstract
+    - Provides benefits of class as well interface
+    - method declaration and defination both are possible.
+    - if a method in a class is abstract then that class has to
+      be marked as abstract.
+    - class can extend abstract class but cant implement it.
+    - class extending abstract class has to provide the definations for
+      abstract methods
+    - Object creation not allowed for abstract classes.
+    - abstract classes can be inherited.
+
+public class abstract A {
+
+    abstract void add();
+
+    void sub(){
+
+
+    }
+}
+
+public abstract class B extends A {
+
+abstract void mult();
+
+void division(){
+
+
+}
+}
+
+
+public class C extends B {
+
+  void mult(){
+
+
+
+  }
+
+  void add(){
+
+
+  }
+
+}
+
+
+class D {
+
+  main(){
+
+      C obj = new C();
+
+      obj.add();
+      obj.sub();
+      obj.mult();
+      obj.division();
+  }
+
+}
+-------------------------------------------------------
+Exception And FileHandling.
+
+  Exception -  It is also deviation from expected behaviour but can be controlled/handled.
+  Error - It is a deviation from expected behaviour.
+
+
+  checked and unchecked Exception
+
+    unchecked Exception
+       -
+-----------------------------
+
+Assignment 1 : flush()
+
+Assignment 2: marker interfaces
+
+Assignment 3 :
+    No of words
+    No of lines
+    No of lines containing word API and print that line
+
+Assignment 4:
+      emp.csv
+    name,Age,designation,salary
+
+    1. Print contents of file.
+    2. Print employee details having name is Sachin.
+    3. Print out the employee details having highest salary.
+    4. Print out the employee details having second highest salary.

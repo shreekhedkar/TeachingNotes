@@ -1,0 +1,72 @@
+Revision
+  TestNG
+     - Testing Framework
+     - It provides a platform for writing tests
+     - Annotations - boiler plate code written by testng
+
+Benefits/Features of Framework
+   - Maintaibility
+   - Extensibility
+   - Support
+   - Reusability
+   - Externalize Data
+   - Reporting capabilities
+   - Performance
+   - Scale
+
+AAA- Arrange Act Assert
+
+@Test
+public void test(){
+  int a = 10;
+  int b = 20;
+
+  int result = Calculator.add(10,20);
+
+  Assert.assertEquals(30,result);
+}
+
+@BeforeSuite - once for entire suite. Used for initialization
+@AfterSuite - once after all tests from all classes are executed
+              cleanUp activity
+@BeforeClass - once for every class- Used for initialization
+@AfterClass - once after all tests from class are executed.
+@BeforeMethod - executes each time before running every test
+@AfterMethod - executes each time after running the test.
+@BeforeTest -  once before running tests in the class.
+@AfterTest - once after running tests in the class
+
+Class SimpleCalculatorTest {
+@Test(dataProvider= "testData")
+public void testAdditionFunctionality(int a, int b, int expectedResult){
+    int actualResult = a+b;
+    Assrt.assertEquals(actualResult,expectedResult);
+}
+}
+
+Class ScientificCalculatorTest extends SimpleCalculatorTest {
+
+
+
+}
+
+@DataProvider
+public Object[][] testData(){
+    Object[][] name = new Object[rows][colns];
+    name[0][0] = 10;
+    return name;
+}
+----------------------------------------------------------
+Build management tool
+     -
+ANT
+Gradle
+Maven
+
+  What?
+    - Folder structure
+    - Provides a repository
+
+  Why
+    - Managing Dependencies
+    -

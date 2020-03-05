@@ -1,0 +1,21 @@
+WebDriver driver1 = new FireFoxDriver();
+FireFoxDriver driver2 = new FireFoxDriver();
+
+--------------------------------------------------
+
+Build -
+       - Executable code of application
+       - Collection of files
+       -
+
+       .jar  - Executable and non Executable
+
+Maven - Build Management tool
+   Apache
+    - Versioning
+    - Bundling
+    - Reporting
+    - Executing
+    - Dependency Management
+
+    

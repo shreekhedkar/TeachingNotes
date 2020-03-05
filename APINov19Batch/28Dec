@@ -1,0 +1,51 @@
+Revision
+  Collections
+     - It is a framework consists of classes and interfaces which
+       can be used to manage the group of objects.
+
+List - interface implemented by ArrayList, LinkedList , Stack and Vector
+      List<Class> obj = new ArrayList<Class>();
+      obj.add(Class Obj);
+      obj.remove(index)
+     - Allows duplicates
+     - Allows null values
+     - Preserves natural order of elements
+     - For ArrayList default cap is 10
+     - No need of specifying initial capacity.It will grow automatically.
+     - In case of arraylist, searching is faster while insertion/updation is slower
+obj.size() - To check size of the Collections
+ArrayList uses Array
+LinkedList uses Node in form dobly linked List
+
+Set
+      - Doesn't allow duplicates
+      - It is using hashmap at backend
+      - Order is random and hence get() method on set do not works.
+      - null is allowed
+
+Set<Class> obj = new HashSet<Class>();
+      obj.add(Class Obj);
+      obj.remove();
+
+List<Class> objName = new ArrayList<Class>(obj);
+objName.get(0);
+-------------------------------------------------------------------
+HashMap
+     - Key-Value Pair
+
+Map<String,String> mapObj = new HashMap<String,String>();
+
+   mapObj.put("name","abc");
+   mapObj.get("name");
+
+-------------------------------------------------------------------
+TestNG
+   - Unit testing framework
+   - Next Generation Test framework
+   - Junit is Previous Generation
+
+Assignment 1:
+
+Calculator
+  - Unit tests for Calculator
+  

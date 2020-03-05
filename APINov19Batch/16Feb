@@ -1,0 +1,158 @@
+Jmeter
+  - A performance testing tool
+
+1. Test plan  -  Collection of thread groups , listeners  , config elements
+2. Thread Group -
+     1. Simple Thread group - No of threads , iterations etc.
+     2. jp@gc-ultimate thread group -Stepping load
+Thread group can have :
+   1. Sampler
+        -HTTP Request Sampler - REST API
+        -Debug Sampler - Variables printing
+   2. Config. Element
+        - Header Manager - Setting headers in your request
+        - User Defined Variables - Custom variables
+   3. Pre-processors - Sample timeouts
+   4. Post-processors
+        - Json path extractor - extracting field value from json
+        - Json format post processor - Beautify json
+   5. Assertion
+        - Response assertion - response code , response message etc.
+        - Json assertion - Validating field from response json
+   6. Controller - Flow of execution
+        - Loop Controller
+        - If Controller
+  7. Timers - To introduce delay
+        - Random timer
+        - Constant timer
+  8. Listeners
+3. Listeners  - Output of your Requests
+        - View Results Tree
+        - Summary Report
+        - Aggregate report
+        - Response Graph
+        - Perfmon metrics
+        - Aggregate Graph
+4. Config element
+        - Http Request Defaults - hostname, uri
+5. Assertions
+6. Timers
+7. Pre and post processors
+8. Non-Test Element -
+     - HTTP Test Script Recorder
+
+Assign 1 :
+
+Manual - api.octoperf.com - Create an account - One time activity
+
+Documentation - https://api.octoperf.com/swagger-ui.html
+
+1. Token Creation /public/users/login
+2./workspaces/member-of -
+    - Extract Id
+3. /design/projects/by-workspace/${id from step2}/DESIGN
+
+Use all Listeners
+  - Save all the outputs to the file- csv
+  - perfmon metrics
+Thread Group - Ultimate thread group
+  - 10 mins test
+Assertions
+  - Json Assertions
+  - Response Assertion
+Controller - Loop
+Sampler - Debug , Dummy sampler
+
+---------------------------END OF REST API--------------------------
+
+SOAP Protocol - HTTP protocol + XML
+  Simple Object Access Protocol -> Soap1.2
+  - Soap Envelope
+
+  -  Soap Header
+  -  Soap Body
+  -  Soap Fault
+
+wsdl - Web Service Description Language
+ XML -
+
+Test Cases of Add operation
+  - Add function
+     1. Verify addition of 2 nos with expected outcome
+     2. Verify addition of 2 nos with negative values and it matches expected Results
+     3. Verify addition of 2 nos with float values and it matches expected Results
+     4. Check if response contains specific field
+     5. Check the response time
+     6. Check the status code
+
+Assign:
+  https://www.crcind.com/csp/samples/SOAP.Demo.CLS?WSDL=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project Creation
+WSDL
+  SampleRequest
+  TestSuite
+  Assertion
+     - Response time
+     - Response Code
+     - Valid Soap schema
+     - Node Exist
+     - Not a soap fault
+     - Count of node
+     - Xml Value
+     - Not contains assertion -- Done till this
+        - Seq
+        - Parallel
+     - Test suite log
+  Load Tests
+  Security Test
+  Run test suite
+    -Click on suite and run
+    -From Runner
+  Project Summary
+  Clone of test suites
+Data Driven Testing
+  - Specifying properties at
+     - Test Case level
+     - Test Suite Level
+     - Project Level
+     - Properties test step
+     - Properties from external file
+     - Property Transfer
+DB Testing
+     - https://www.apachefriends.org/download.html
+     https://jar-download.com/artifacts/mysql/mysql-connector-java
+     com.mysql.jdbc.driver
+     jdbc:mysql://localhost:3306/database?user=root&password=password
+Data Source
+    - Grid
+    - File
+    - Data Sink - Writing to file - property transfer to prove
+    - Data Generator - Randomize input
+Test Case Debugging
+Test on demand
+Reports
+Conditional Goto
+
+
+
+Sat Feb 22 11:20:28 IST 2020	TransferAddResultToSubtractReq	[Missing match for Target XPath [declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+declare namespace ns1='http://tempuri.org/';
+//ns1:Substract/a]]

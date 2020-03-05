@@ -1,0 +1,43 @@
+oAuth - Open Authorization
+
+Authentication
+  - Who you are
+Authorization
+  - Who can do what
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+User - > client App(BookMyshow) -> Authorization Grant Request -> Authorization Server(Google)
+                  client_id
+Authorization Server - > code -> client
+
+Client -> code (client_id)- > Authorization Server(Grant Req)
+        -> Access Google profile for this User
+
+Authorization Server - > Access Token(sdssdf1234356546dsfsdf)
+
+Client - > AcessToken -> Resource Server
+
+Provide resource to client  (email,profile picture,etc)
+
+
+
+
+
+----------
+
+https://accounts.google.com
+/signin/oauth?
+client_id=990572338172-iibth2em4l86htv30eg1v44jia37fuo5.apps.googleusercontent.com&as=gMlwCcNTodV2xSfVMEykfA&destination=https://in.bookmyshow.com&approval_state=!ChRxN242VDh0amVhZVp4MGxVZHRWaRIfTV9LeFN3djZsejhXOEhuU1JuY2dubXBlUFdHMV9SWQ%E2%88%99AJDr988AAAAAXi0uMfAPryOABNohZPVdaQ6k3ASiUFk5&oauthgdpr=1&xsrfsig=ChkAeAh8T94WAIU4a1-k3bpMH393ZHRj3TVaEg5hcHByb3ZhbF9zdGF0ZRILZGVzdGluYXRpb24SBXNvYWN1Eg9vYXV0aHJpc2t5c2NvcGU

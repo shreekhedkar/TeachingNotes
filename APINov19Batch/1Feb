@@ -1,0 +1,57 @@
+Twitter oAuth1.0
+    given().Auth().oAuth("",";","","");
+
+
+Facebook
+
+
+
+String token;
+try{
+Response response =
+}
+catch(UnAuthorizedExcpetion e){
+
+   if(e.getMessage().equals("Token Expired")){
+    regenerateToken();
+    GetEmployees();
+    }
+}
+
+GetEmployees(){
+
+
+}
+
+
+public String regenerateToken(){
+
+return given().when().post("http://localhost:8083/oauth/token").then().extract().path("access_token") ;
+}
+response.assertThat().statusCode(200);
+
+------------------------------
+
+Externalization
+
+@Test
+public void createEmp(){
+  String employeePayload = "{"name":"abc","salary":"1234","age":"29"}";
+  given().when().body(employeePayload).post("http://dummy.restapiexample.com/api/v1/create")
+          .assertThat().statusCode(200).and().body("employee_name",equalTo("abc"));
+
+Assert.assertEquals(given().when().body(employeePayload).post("http://dummy.restapiexample.com/api/v1/create")
+.assertThat().statusCode(200).and().body().extract().jsonPath().get("employee_name"),"abc");
+
+Response resp = given().when().body(employeePayload).post("http://dummy.restapiexample.com/api/v1/create")
+        .assertThat().statusCode(200).and().body().extract();
+
+}
+
+
+--- Assignment
+ JIRA
+ Twitter
+
+ Facebook -
+          - Use RestAssured to Automate Feed and me API

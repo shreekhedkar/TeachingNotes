@@ -1,0 +1,54 @@
+Agenda
+  - statusLine
+  - xml
+  - header
+  - Response extraction
+    - path
+    - jsonpath
+    - xmlPath
+  - PUT
+  - POST
+  - DELETE
+------------------------------------------------------------
+
+Revision :
+
+  RestAssured - it is a library provided for making REST calls
+                from the client
+
+  Hamcrest Matchers - this library works on regular expression
+                       which helps to match values from the output.
+
+GET - Verb
+  - It is HTTP method.
+  - It will fetch the data from the server.
+Request
+  - URL- URI
+  - Headers - contentType - application/json
+  - Body - Json/ XML
+Response
+  - Status Code  - 1XX, 2XX , 3XX ,4XX , 5XX -
+  - Headers -
+  - Body - Json/XML
+====================================================
+GET https://reqres.in/api/users/
+
+
+POST
+  - Send the data to the server to create the resource
+Request
+  User details - Json - body -payload
+Header
+
+Response
+   Body- What type of resource is created
+        - Json
+Validate
+
+-----------------------------------------
+https://reqres.in/ - Automate All APis
+https://petstore.swagger.io/#/
+
+Automate - CRUD operation for Pets
+     - Json as well as Xmls
+     Using TestNG - Group Based Methods

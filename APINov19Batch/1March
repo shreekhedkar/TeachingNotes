@@ -1,0 +1,33 @@
+Jenkins  - CI/ CD tool
+  Why
+   - Continuous integration
+   - Continuous delivery
+
+Job = Item
+Runs
+
+Configure System - Global Config.
+Manage Plugins -
+Global tool config -
+Workspace -
+
+
+-----Assignments------
+
+Assignment 1 : Maven + email + Test report
+Assignment 2: Same for postman job
+              npm install -g newman-reporter-html
+              newman run "C:\Users\admin\Downloads\APITools\PostmanDataFiles\DummyApi.postman_collection.json" -e "C:\Users\admin\Downloads\APITools\PostmanDataFiles\Test- Dev Env.postman_environment.json" --reporters cli,junit,html --reporter-junit-export "newman\report.xml" --reporter-html-export "newman\report.html" --disable-unicode
+Assignments 3: Scheduling Jmeter script via cron expression
+Assignment 4 : SoapUI integration
+
+
+----------------Git/Stash--
+1. Sharing code
+2. Managing code
+
+
+Repository
+Distributed Version Control
+
+UseCase 1: Project is on local machine and needs to upload on bitbucket.

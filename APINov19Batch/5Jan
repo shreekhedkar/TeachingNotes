@@ -1,0 +1,26 @@
+Maven
+  Build management tool
+   -Versioning
+   -Packaging
+   -Dependency management
+   -Sharing of libraries/code
+   -Collaborative structure for both dev and test work
+
+  /src/main/java - .java files written by developers
+  /src/main/resources - property files, config files used by developers
+  /src/test/java - .java files written by testers
+  /src/test/resources  -  property files , config files used by testers
+
+pom.xml
+  - Project Object Model is a driver file which contains
+     - Project Dependencies
+     - Project Build information
+     - Plugins
+--------------------------------------------------------------
+API- Application Programming Interface
+  Interface between client and server
+
+  http -
+  https  - secure
+
+------------------------------------------------------------------

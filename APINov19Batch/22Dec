@@ -1,0 +1,73 @@
+Revision :
+Exception
+    - Deviation from expected behaviour but that can be controlled.
+    - Checked and Unchecked
+    -Checked
+       - Java checks the possibilty of exception during compile time
+    - Unchecked
+        - Java cant take gurantee of identifying the possibilty of exception
+Handling an Exception
+
+Scanner scan ;
+try {
+    .. Statements that might raise and exception
+      scan = new Scanner(System.in);
+
+}
+finally{
+
+  scan.close();
+}
+
+If the expected exception is raised program will not be terminated but will continue
+
+main() throws IOException{
+
+    FileReader  reader = new FileReader("filename.txt");
+
+    reader.close();
+}
+
+
+File Handling
+    - Read and write operations
+    - Charcter stream
+    - Byte stream
+
+FileReader fr = new FileReader(pathoffile);
+BufferedReader reader = new BufferedReader(fr);
+
+String line=null;
+  while(line =reader.readline())!=null){
+
+      sysout(line)
+  }
+-----------------------------------------------------------------
+Collections
+Why?
+  - Grouping of similar entities.
+  - Array - is a collection with similar datatype.
+  - Vector -
+  - HashTable -
+
+int [] array = new int[5];
+array[0] = 10;
+
+Vector vector = new vector();
+vector.add(10);
+
+ht.put(10);
+
+----------
+Assignment
+
+Employee -> Person
+
+Menu
+1. Add
+2. Delete
+3. Update
+4. Search Employee
+5. Get All Employees
+6. Print All Employee details to File
+7. Exit

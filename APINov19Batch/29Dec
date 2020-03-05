@@ -1,0 +1,87 @@
+Revision
+  Map - It is an interface under collections framework.
+      - It is used to store key value pair objects
+
+Map<Class,Class> obj  = new HashMap<Class,Class>();
+obj.put("Key","Value");
+obj.get("Key");
+
+Benefits/Features
+   1. Searching is fastest. Time complexity O(1)
+   2. Do not dupAllows
+
+HashMap
+TreeMap
+LinkedHashMap
+SortedHashMap
+NavigableHashMap
+
+
+Do not allows duplicate keys
+null key and null value is allowed - it gets stored at 0th position
+--------------
+TestNG
+
+@Test - Executes the method
+ priority -
+ enabled
+ expectedExceptions = Exception.class
+
+Assertion
+   - Assert.assertEquals(actual , expected)
+
+      boolean flag = false;
+      if(a >10){
+      flag = true;
+      }
+    - Assert.assertTrue(flag)
+    - Assert.assertFalse(flag)
+
+Design
+    - AAA
+Class CalculatorTest {
+
+  @Test
+    public void testAddition(){
+        int a =10 ; //arrange
+        int b =20;
+
+        int result =c.add(a,b); //act
+        Assert.assertEquals(result,30);  //assert
+    }
+Test Doubles
+    - Mock
+    - Stub
+    - Fake
+    - Spy
+    - Dummy
+      {
+       Arrange
+       Act
+       Assert
+       }
+
+Design Principles - SOLID
+SRP - Single Responsibility
+O - Open Close
+L - Leskov's Substitution Principle
+I - Code an interface
+D - Dependency Injection - Inversion Control - IoC
+
+
+Assignment
+SimpleCalculator
+  add
+  sub
+  mult
+  division
+ScientificCalculator
+    sin
+    cos
+    tan
+
+TestSuite
+1 testng.xml
+    Sanity
+    E2E
+Use DataProvider for add sub mult methods

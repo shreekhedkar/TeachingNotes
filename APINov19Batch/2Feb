@@ -1,0 +1,87 @@
+Framework
+   Why Refactoring ?
+     - To make it reusable
+     - To reduce maint.
+     - For ease of Use
+     - To make this generic
+     - Less code changes when data modifications are proposed
+     - Better readability
+
+Approaches for creating Payload :
+
+Approach1 : Using String
+  String var = "{\"key\":\"value\"}";
+
+Approach2 : Using Maps
+Map<String,String> payload = new HashMap<String,String>();
+payload.put("key","value");
+
+Approach3 : Using Files
+
+
+
+-------------
+
+Map<String,String> idPayload = new HashMap<String,String>();
+idPayload.put("id","10100");
+
+
+Map<String,Object> projectPayload = new HashMap<String,O>();
+projectPayload.put("project",idPayload);
+
+Map<String,Object> fieldsPayload = new HashMap<String,Object>();
+fieldsPayload.put("fields",projectPayload);
+
+
+
+payload1.put("id","10100");
+payload1.put("fields.project.id","10100");
+
+
+
+{
+    "fields": {
+        "project": {
+            "id": "10100"
+        },
+
+      "customfield_10102": "Application Authentication Epic",
+        "summary": "Application Authentication Epic",
+        "issuetype": {
+            "id": "10001"
+        },
+        "assignee": {
+            "name": "learn"
+        },
+        "reporter": {
+            "name": "shreekhedkar"
+        },
+
+        "labels": [
+            "ReleaseEpic",
+            "blitz_test"
+        ],
+        "timetracking": {
+            "originalEstimate": "10",
+            "remainingEstimate": "5"
+        },
+        "description": "description",
+        "duedate": "2020-03-11"
+
+
+    }
+}
+
+---Project--
+Testng + Maven
+
+Generic Framework
+    - Automate CRUD API
+        - Jira/Twitter
+        - DummySample - http://dummy.restapiexample.com
+    - Test Data
+        - Json + POJO
+        - Excel
+-----------------------
+
+Trace info debug warn error

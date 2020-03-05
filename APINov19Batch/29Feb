@@ -1,0 +1,41 @@
+Jenkins
+Plugins to install
+
+Maven Integration Plugin
+HTML Publisher Plugin
+NodeJs Plugin
+SoapUI Pro Functional Testing Plugin
+Performance Plugin
+Green Balls Plugin
+
+Test Case Debugging
+Test on demand
+Reports
+Git integration
+
+Jenkins
+For postman
+   NodeJs plugin
+   in  job - build use -Provide Node & npm bin/ folder to PATH
+ Postman Job Issue https://medium.com/pacroy/how-to-fix-jenkins-console-log-encoding-issue-on-windows-a1f4b26e0db4
+
+SoapUI -Jenkins Help
+https://support.smartbear.com/readyapi/docs/general-info/licensing/troubleshooting/jenkins.html#_ga=2.190740395.1292082650.1582922183-2075324863.1573277548
+------------------------------------
+Revision
+  1.DataSource  + DataSource Loop
+               Grid
+               Excel
+               File
+               Jdbc
+               Groovy
+               Generator
+  2. DataGenerator
+           - List
+           - Number
+           - Script
+           - Template
+  3. Datasink
+          - Input and Output writing to file
+  4. Reports
+     Runner

@@ -1,0 +1,51 @@
+Assignment 1
+http://currencyconverter.kowabunga.net/converter.asmx?WSDL
+
+1. GetLastUpdateDate
+2. Prop Transfer to
+     1. GetCurrencyRates
+     2. DataSink
+     3. GetCurrencyRate
+     4. GetConversionAmount
+3. Get CurrencyRates
+    Assertion for INR
+4. Get Currencies
+     Count on currency Result
+     PropertyTransfer - USD - GetConversionAmount
+     PropertyTransfer - INR - DataSink - ToCountry
+
+5. Get CurrencyRate
+     Use Datasink for Currency field
+     Use Smart assertion
+        - Check Currency Value is > 70
+6.  GetConversionAmount
+    Add property - units - 1
+    Currency From - Step #4 above
+    Currency To - DataSink
+    RateDate - Hardcoded
+7.  GetConversionRate
+    Currency From - Step #4 above
+    Currency To - DataSink
+    RateDate - Hardcoded
+8.  GetCultureInfo
+      - DataSource
+          - Use Grid add Currency and CountryName Variables for below sets
+          AED	ar-AE
+          ALL	sq-AL
+          INR	te-IN
+          USD	en-US
+Run testsuite
+
+Assignment 2:
+
+http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL
+Automate minimum 20 requests
+
+1. Identify dependencies in the Requests
+   Use:
+   1. properties
+   2. property transfers
+   3. DataSource
+   4. DataSink
+   5. DataGenerator
+   6. Assertions

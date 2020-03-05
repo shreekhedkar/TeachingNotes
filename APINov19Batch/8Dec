@@ -1,0 +1,164 @@
+-Revision
+  Strings
+    - Immutable - Cant change the value
+    - It is a class and NOT a datatype
+    String str = "Str"
+      - str will be stored in string literal pool
+      - literal pool is a part of heap memroy area
+      - For redundant string declarations memory will not be
+        allocated again
+    String str = new String("str");
+       - str will be stored outside literal pool but inside heap
+       - each time memory will be allocated irrespective of the
+         existence of the string in the memory
+Equality of Strings:
+       - Never Never use == to compare two Strings
+       - Because it compares the address of the strings and
+         NOT the values of the strings
+       - For comparison based on the values of the string
+         use equals method.
+-------------------------------------------------------
+Static And Non-Static Rules
+
+Rule 1 : Static functions can have non static members(variables) ONLY.
+Rule 2:  Static things in Java can ACCESS static things ONLY.
+Rule 3:  Static global variables can be accessed by all functions
+          of the class and value of the variable is persisted
+          across the fuctions of a class.
+Rule 4 : All global variables need not be static.
+Rule 5 : Global variables are initialized with the default value
+         as per the data type.
+          int 0 , String null, char '',Boolean false.
+---------------------------------------------------------------------
+Class - It is a structure which binds data and behaviour.
+Object - It is an instance of a class.
+
+Car class - person
+
+public class Person{
+
+   int age; // instance variables
+    String name; //instance variable
+
+    Person(int age, String name){ // constructor
+        age = age;
+        name = name;
+
+        }
+        }
+    public static void walk(){
+      sysout("Person can walk");
+    }
+    public void eat(){
+    }
+}
+
+public class PersonImplementation {
+
+  main(){
+
+
+      Person person2 = new Person(10,"abc");
+
+
+  }
+
+}
+
+
+}
+
+-------------------
+
+Inheritance
+  - Parent class -Base - root Class
+
+  is-a relationship
+
+
+  class Employee extends Person{
+    int eno;
+    double salary;
+
+    public void work(){
+
+    }
+
+    public void walk(){
+        sysout("Employee can walk")
+    }
+  }
+
+  main(){
+
+    Person p = new Person(); // age , name , walk
+
+
+
+  }
+
+
+Assign 1 :
+  Come up with minimum 10 different String functions
+  WITH their usage.
+Assign 2:
+   Class GeometricFigure
+        - int dim1
+          int dim2
+   Class Circle extends GeometricFigure
+        - area(int dim1, int dim2){
+            //
+            return
+        }
+   Class Rectangle extends GeromerticFigure
+        - area(int dim1, int dim2){
+
+        }
+   Class ByJuApplication
+      - main
+        Circle(10.2)
+        Rectangle(10,20)
+       Area of Circle -
+       Area of Rectangle -
+
+Assign 3: // FernsAndPetals
+
+  Hello
+  Menu()
+  1. Show Inventory
+  2. Order
+  3. Exit
+  Enter Your choice -1
+  Roses - 10 ,  0 Lilly and 4 Sunflowers.
+  Menu()
+  1. Show Inventory
+  2. Order
+  3. Exit
+  Enter Your choice -2
+ What do you want to buy ?
+  1. Rose
+  2. Sunflower
+  3. Lilly
+  4. Exit
+  Enter Your choice -1
+  Enter the quantity - 5
+  5 roses are purchased. Please pay 50 rs.
+  What do you want to buy ?
+   1. Rose
+   2. Sunflower
+   3. Lilly
+   4. Exit
+  Enter Your choice -4
+  Menu()
+  1. Show Inventory
+  2. Order
+  3. Exit
+  Enter Your choice :1
+    Roses - 5 ,  0 Lilly and 4 Sunflowers.
+    Menu()
+    1. Show Inventory
+    2. Order
+    3. Exit
+    Enter Your choice 3
+
+Thaks for visit.See you again!

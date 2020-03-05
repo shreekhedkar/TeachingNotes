@@ -1,0 +1,29 @@
+OAuth - Open Authorization Standard or framework which delegates Authorization
+       to third party application for limited access of webservice or http resources.
+
+Authentication - OpenID connect
+
+Terminology
+   Resource Owner - user
+   Client App  ~ bookmyshow website
+   Resource Server   ~ Google / Facebook
+   Authorization Server  ~ Google / Facebook
+Client Id -
+    Agreement between client app and oAuth provider
+     - Client id and Secret
+Grant Types
+  Authorization Code
+
+
+  Implicit
+  Resource password credentials
+  Client password credentials
+
+
+  Assignment
+   - Automate following twitter APIs in restAssured
+     - Get Timeline
+     - Post Tweet
+     - Search user
+     - User Timeline
+Validate ANY 4 APIs and validate minimum 4 fields for every API

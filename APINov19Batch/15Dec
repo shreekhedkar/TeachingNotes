@@ -1,0 +1,150 @@
+Revision
+  Static and Non-Static
+   - Static things in Java can access tp static things only.
+   - Variables inside static methods should be non- static.
+   - Global variables need not to be static.
+   - Static variables/ functions are shared across the program.
+   - To access non static variable , object is required.
+   - To acess static variable , object is not required, it can be accessed directly by classname
+      classname.variableName
+--------------------------------------
+Inheritance
+   - is-a relationship between two entities.
+   - process of inherting the properties of one entity into another.
+   - Single or single level - Base/root/parent/super A <- B child/subclass
+   - multilevel
+   - multiple Inheritance not supported in java
+
+Constructors
+   - It is a special function whose name is same as class name.
+   - Constructing an object ,initialise instance variables.
+   - If a class has Parameterized Constructor and object is created
+      by Default Constructor then Java will not add Default Constructor
+      by its own, user has to make sure that default Constructor is availble.
+   - Super
+       - It is a keyword used to call base class
+         Constructor from child class.
+
+  class A {
+
+    A(int a){
+
+  }
+
+  class B extends A{
+
+    B(){
+      super(10);
+    }
+
+  }
+
+   Practice p = new Practice();
+   p.a =10;
+Class Practice{
+ int a; // instance variables
+
+  Practice(int a){ // Parameterized Constructor
+
+    this.a = a;
+  }
+
+}
+
+- Overriding
+    - Same name but different behaviour.
+    - It uses dynamic polymorphism to override methods across the class
+
+
+Overloading
+    - name is same but the signature is different for methods
+
+
+   public int add(int a ,int b)
+
+    }
+
+   public int add(int a , int b, int c)
+
+   public String add (String a , String b) {
+
+  }
+
+  -----------------------------------------------------------
+  Interfaces
+    - Has a relationship
+
+public interface exercise {
+
+        public void add(); //method declaration
+        public void substract(int a , int b);
+}
+
+class Person implements exercise{
+
+    public void add(){
+
+
+    }
+
+    public void substract(int a , int b){
+      -----
+    }
+
+}
+
+public void add(){  //method defination
+    -----
+
+}
+
+- Hiding the implementation details
+  -
+
+  --------------
+Assignment
+
+1.Can you overload constructor
+2.Can you override constructor
+
+Assignment 1 :
+
+    Abstract Class - Fruit
+     abstract prepareJuice();
+     cut(){
+
+     }
+     sysout"Fruit is cut"
+     peel{} {
+     sysout"Fruit is peeled"
+     }
+
+    Mango - Fruit
+    cut(){
+
+    }
+    prepareJuice(){
+
+    Mango juice is prepared.
+    }
+
+    Apple
+      peel {
+
+
+      }
+      prepareJuice(){
+
+      Apple juice is prepared.
+      }
+    Watermelon
+
+Implementation HariOmjuiceCenter{
+
+}
+
+
+Assignment 2:
+
+Same Assignment but fruit will be interface
+----------------------

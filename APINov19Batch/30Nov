@@ -1,0 +1,49 @@
+Revision
+  - Data Types - 8
+  - String is a class.
+Operators
+   - Arithmetic operators - + ,-,/,* ,%
+   - Unary Operators - ++,--,!,-
+   - Logical Operators - && , ||
+   - Assignment operators - =
+   - Conditional Operators - == , > ,<,!=,>=,<=
+   - Bitwise Operators - << ,>> , &
+-------------------------------
+
+Assignment 1:
+
+1. Calculator - Take input from console
+
+Assignment 2 :
+
+Enter two numbers:
+Enter your choice :
+  1.Addition
+  2.Sub
+  3.Division
+  4.Multip
+  5.Modulo
+  6.Exit
+
+Output : Addition is  .....
+
+Assignment 3 :
+
+
+Enter two numbers:
+Enter your choice :
+  1.Addition
+  2.Sub
+  3.Division
+  4.Multip
+  5.Modulo
+  6.Exit
+
+Output : Addition is  .....
+Enter your choice :
+  1.Addition
+  2.Sub
+  3.Division
+  4.Multip
+  5.Modulo
+  6.Exit

@@ -1,0 +1,68 @@
+Revision
+  Array - Collection of similar data types.
+  Advantages :
+    1. It can store more than 1 element.
+    2. Easily access elements - Searching elements is easier.
+       Because memory allocation for elements inside an array is
+       contiguous.
+
+
+DisAdvt:
+    1. Insertion and deletion from an array is costlier operation
+    2. Contiguous free memory is required to use an array.
+
+    int i[] = {10,20};
+    int i[] = new int[4]; //declaration
+    i[0] = 10;
+    i[1] = 20;
+    sysout(i[2]);
+-------------------------------
+class Test {
+
+ static int a =10; //global
+public static void main(){
+  a = 11; a = 11;
+  sysout("in main::"+a); //11 11
+  test();
+  test2();
+}
+
+public static int print(int b){
+    b++;
+    return b;
+}
+public static void test(){
+  sysout("in test::"+a); // 10 11 10
+}
+
+public static void test2(){
+  sysout("in test::"+a); // 10 11 10 11
+}
+
+}
+---------------------------
+
+Strings = More than 1 character
+          - collection of similar or different characters
+          - Sequence of characters
+
+    'A','B'
+
+String str = "life"; // static declaration
+    - heap
+    - pool
+    - no operation
+String str1 = new String("life"); //dynamic declaration
+    - outside heap
+    - object
+    - heap
+    - operations
+
+
+main(){
+
+  String str = "life";
+  str.replace("l","w");
+  sysout(str);// wife
+
+}

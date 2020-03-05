@@ -1,0 +1,42 @@
+API - Application Programming Interface
+    - Interface between two systems
+    - Medium to communicate between client and server
+RPC - remote procedure call
+
+Machine -> Machine
+client -> Server
+  SOAP - Simple Object Access Protocol
+       - Xmls
+ REST -  RestFul Architecture Style.
+       - Json and or xmls
+{
+  "name" : "abc",
+  "id" : 10,
+  "contact":[{
+    "primary":9122233334,
+    "work":  73893838383
+    }
+  ]
+}
+
+GET - Method
+
+Headers
+URL - Https://www.facebook.com/view/friends?name='Salman'&age=90
+URI -Uniform Resource Identifier
+  -/view/friends
+input data
+Authentication
+Authorization
+------------------------------------------
+Assignment
+
+Automate following GET APIs
+   - Validate response (200 or 404)
+   - Validate response body(e.g validate data.id with expected value)
+List of APIs
+  https://reqres.in/api/users/2
+  https://reqres.in/api/users/23
+  https://reqres.in/api/unknown/2
+  https://reqres.in/api/unknown/23
+  https://reqres.in/api/users?delay=3

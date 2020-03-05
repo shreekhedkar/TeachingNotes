@@ -1,0 +1,12 @@
+SOLID principles -
+  Severities
+    Trace > Debug >Info > Warning > Error > Fatal
+
+    log.info("hi")
+    log.warn("bye")
+    log.debug("hello");
+
+log level = debug
+
+
+Log Manager ->  Appender -> Layout Manager
